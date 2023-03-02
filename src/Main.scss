@@ -1,0 +1,156 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+$mainFontColor: #754C29; //dark brown
+$warmBrown: #935E23;
+$hoverFontColor: #8A6545; //medium brown
+$lightBrown: #C49A6C;
+$lightBlue: #CACDE6;
+$paleBlue: #E6E7E8;
+$darkBlue: #515778;
+$paleOrange: #E4CABB;
+$tanOrange: #BF7E60;
+$red: #A03E22;
+$green: #4B7838;
+$paleGreen: #8A9F74;
+$paleYellow: #FFD795;
+$yellow: #FEC053;
+
+body {
+    background: url("./circuit-beard.jpg");
+    background-repeat: repeat;
+    background-size: 1%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1rem;
+    color: $red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.25rem;
+}
+.row {
+    display: flex;
+}
+ul, p {
+    font-size: .75rem;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    
+    ul {
+        margin-left: -1.5rem;
+
+        li {
+            list-style-type: disc;
+        }
+    }
+}
+li {
+    margin-left: 1rem;
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    // @include media-breakpoint-up(lg) {
+	// 	width: 992px;
+	// }
+}
+
+.header-container {
+    margin: 15px 0;
+    justify-content: center;
+    .row {
+        display: flex;
+
+    }
+    .header-row {
+        align-items: center;
+    }
+    .col {
+        @include media-breakpoint-up(lg) {
+            text-align: right;
+        }
+    }
+    h2 {
+        text-transform: none;
+        color: $mainFontColor;
+        text-align: right;
+        margin-bottom: .25rem;
+    }
+    .contact-row {
+        flex-direction: row;
+        justify-content: flex-end;
+        @include media-breakpoint-up(lg) {
+            flex-direction: column;
+        }
+
+    }
+    .contact-col {
+        display: flex;
+        width: auto;
+        padding: .25rem;
+        a {
+            display: flex;
+            font-size: .75rem;
+        }
+        @include media-breakpoint-up(lg) {
+           flex-direction: column;
+           text-align: right;
+           flex: 1 0;
+        }
+    }
+
+}
+
+a {
+    display: flex;
+    color: $mainFontColor;
+    text-decoration: none;
+    justify-content: flex-end;
+    &:hover {
+        color: $hoverFontColor;
+    }
+}
+
+.logo-col {
+    a {
+        justify-content: left;
+    }
+}
+
+hr {
+    margin: 1rem 0;
+    color: #E6E7E8;
+    border-top: 10px solid;
+    opacity: 1;
+    width: 100%;
+}
+.css-qh7kl5-MuiPaper-root {
+    background-color: rgba(255, 255, 255, .5) !important;
+
+}
+.skills {
+    // height: 250px;
+    ul {
+        padding-left: 0;
+    }
+    li {
+        margin-left: 0;
+    }
+}
+.mail-icon, .phone-icon {
+    height: 3rem;
+    width: 3rem;
+}
