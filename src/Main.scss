@@ -47,12 +47,19 @@ ul {
     display: flex;
     flex-direction: column;
     li {
+        list-style-type: none;
         margin-left: .6rem;
         ul {
-            margin-left: -1.75rem;
-
+            margin-left: -1.5rem;
             li {
-                list-style-type: disc;
+                position: relative;
+                list-style-type: none;
+                padding: .25rem;
+                margin-bottom: .25rem;
+                // &:hover {
+
+                // }
+
             }
         }
     }
@@ -142,16 +149,6 @@ hr {
 }
 .css-qh7kl5-MuiPaper-root {
     background-color: rgba(255, 255, 255, .5) !important;
-
-}
-.skills {
-    // height: 250px;
-    ul {
-        padding-left: 0;
-    }
-    li {
-        margin-left: 0;
-    }
 }
 .mail-icon, .phone-icon {
     height: 3rem;
@@ -165,4 +162,119 @@ hr {
 }
 .pointer {
     cursor: pointer;
+}
+.education-bg {
+    background: url("./ghost-logo.png");
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+}
+.li-data {
+    &:hover .bullet-bill.engaged {
+        animation: loader 5s
+    }
+    
+}
+@keyframes loader {
+    5%{
+        color: $red;
+        scale: 2;
+        translate: 0;
+    }
+    25%{
+        color: $paleOrange;
+        translate: 1050px;
+        rotate: 0deg;
+    }
+    50% {
+    color: $red;
+      rotate: 90deg;
+      translate: 1050px;
+    }
+    60% {
+    color: $paleOrange;
+      translate: 1050px;
+      rotate: 180deg;
+    }
+    75% {
+      translate: 0px;
+      rotate: 180deg;
+      scale: 2;
+    }
+
+    100%{
+        translate: 0;
+        rotate: 360deg;
+    }
+  }
+.bullet-bill {
+    position: absolute;
+    left: -15px;
+    font-size: 1rem;
+    color: $mainFontColor;
+}
+.bullet-bill.engaged {
+    left: -25px;
+    font-size:1.5rem;
+}
+
+.bullet-bill-inner {
+    position: relative;
+    left: -15px;
+    font-size: 1rem;
+    color: $mainFontColor;
+}
+.card-links {
+    &:hover .bullet-bill-inner {
+        animation: inner 1s
+    }
+    
+}
+@keyframes inner {
+    5%{
+        color: $red;
+        scale: 1;
+        translate: 10px;
+    }
+    100%{
+        translate: 0;
+        rotate: 0;
+    }
+  }
+.card-links {
+    margin-top: .25rem;
+    position: relative;
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+.card-link + .card-link {
+    margin-left: 0;
+}
+.tgsi-bg {
+    border: 2px solid $mainFontColor;
+    border-radius: .25rem;
+    @include media-breakpoint-up(md) {
+        background: url('/tgsinsurance-home.png');
+        background-size: cover;
+        background-position-x: 0;
+        opacity: .75;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .img-hide-lg {
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+}
+.card {
+    padding: 0;
+    border: none;
+}
+
+.note {
+    font-weight: 800;
+    color: $red;
 }

@@ -10,6 +10,8 @@ import Skills from "./Components/Skills";
 
 
 function App() {
+  const d = new Date();
+  let year = d.getFullYear();
   return (
     <Container className="">
       <header>
@@ -18,15 +20,12 @@ function App() {
       <section className="">
         <Row className="d-flex flex-row">
           <Col xxs={12} sm={12} md={9}>
-            <Paper className="p-3 w-100 d-flex align-items-center" elevation={5}>
+            <Paper className="p-3 w-100 h-100 d-flex" elevation={3}>
               <Objective />
-            </Paper>
-            <Paper className="p-3 w-100 mt-2" elevation={5}>
-              <Education />
             </Paper>
           </Col>
           <Col className="order-3 mt-2 mt-md-0" xs sm={12} md={3}>
-            <Paper className="p-3 w-100 h-100" elevation={5}>
+            <Paper className="p-3 w-100 h-100" elevation={3}>
               <Skills />
             </Paper>
           </Col>
@@ -35,7 +34,7 @@ function App() {
       <section className="">
         {/* <Container className=""> */}
           <Row className="d-flex m-0">
-            <Paper className="p-3 w-100 mt-2" elevation={5}>
+            <Paper className="p-3 w-100 mt-2" elevation={3}>
               <Experience />
             </Paper>
           </Row>
@@ -43,14 +42,14 @@ function App() {
       </section>
       <section className="">
         {/* <Container className=""> */}
-          {/* <Row className="d-flex m-0">
-            <Paper className="p-3 w-100 mt-2" elevation={5}>
+          <Row className="d-flex m-0">
+            <Paper className="p-3 w-100 mt-2 education-bg" elevation={3}>
               <Education />
             </Paper>
-          </Row> */}
+          </Row>
         {/* </Container> */}
       </section>
-      {/* <CardSample /> */}
+      <p className="my-2 text-center">&copy; {year}</p>
     </Container>
   );
 }

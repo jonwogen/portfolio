@@ -1,43 +1,28 @@
-import beardo from '../beardo-4.svg';
+// import beardo from '../beardo-4.svg';
+// import ghostBeardo from '../ghost-logo.png';
+import tgsiHome from '../tgsinsurance-home.png';
 
 export const workData = [
     {
       projectTitle: "TGS Insurance",
-      modalTitle: "Modal1",
-      modalText: "test text 1",
-      modalImage: beardo,
-      readMore: "Read1",
-      projectImage: "image",
-      projectTeam: "Test1",
-      year: "2022",
-      listItems: ["Enter an address for an Instant Quote", "item2", "item3"],
+      bgImage: "tgsi-bg",
+      projectImage: tgsiHome,
+      projectDescription: "Simply put, these links will process the information entered (must be a TX or AR address) and return a valid home and/or auto insurance quote. Try the links on the bottom and use the sample addresses if necessary.",
+      listItems: ["HOME: 13410 Summer Villa Ln, Houston, TX, 77044", "AUTO (Name and Address): Lanny Hayes, 26914 Marlan Forest Ln, Cypress, TX 77433"],
       links: [{link: "https://tgsinsurance.com", name: "Instant Home Quote"},{link:"https://tgsinsurance.com/instant-auto-quote", name:"Instant Auto Quote"}],
-      tags: ["#tag1 ", "#tag2 "]
     },
     {
       projectTitle: "Test2",
-      modalTitle: "Modal2",
-      modalText: "test text 2",
-      modalImage: "image",
-      readMore: "Read2",
+      bgImage: "Read2",
       projectImage: "image",
-      projectTeam: "Test2",
-      year: "2022",
       listItems: ["item1", "item2"],
       links: [{link: "https://tgsinsurance.com", name: "Instant Home Quote"},{link:"https://tgsinsurance.com/instant-auto-quote", name:"Instant Auto Quote"}],
-      tags: ["#tag1 ", "#tag2 "]
     },
     {
       projectTitle: "Test3",
-      modalTitle: "Modal3",
-      modalText: "test text 3",
-      modalImage: "image",
-      readMore: "Read3",
+      bgImage: "Read3",
       projectImage: "image",
-      projectTeam: "Test3",
-      year: "2022",
       listItems: ["item1", "item2", "item3"],
       links: [{link: "https://tgsinsurance.com", name: "Instant Home Quote"}],
-      tags: ["#tag1 ", "#tag2 "]
     }
   ];
