@@ -1,9 +1,9 @@
-import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 
 function Education() {
   return (
-		<Col xs>
+		<Row xs>
 			<h2>Education</h2>
 			<ul>Associates of Applied Science Degree in Web Design and Interactive Media
 				<li>The Art Institutes International – Minneapolis, Minnesota - March 2013
@@ -15,7 +15,7 @@ function Education() {
 			<ul>Bachelor's Degree in Art - emphasis on Electronic Art (early web program)
 				<li>University of Minnesota - Minneapolis, Minnesota - June 2001</li>
 			</ul>
-		</Col>
+		</Row>
 	)
 }
 

@@ -1,9 +1,21 @@
 // import Container from 'react-bootstrap/Container';
+import { React, useState } from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+// import { workData } from "./Data";
+import CardSample from "./Card";
+
 
 
 function Experience() {
+
+
+
+	// const initialShowState = Object.fromEntries(
+	// 	workData.map((data) => [data.projectTitle, false])
+	// );
+	const [show, setShow] = useState(false);
+
 	return (
 		<>
 	<Col xs className=""><h2>Experience</h2></Col>
@@ -12,7 +24,8 @@ function Experience() {
 				<ul>THE GO SOLUTION - SENIOR WEB DEVELOPER
 					<li>SEPTEMBER 2020 - FEBRUARY 2023
 						<ul>
-							<li>Created an automated insurance quoting system with 5-10 insurance carriers issuing bindable quotes in less than 10 seconds, using PHP, JavaScript, MS SQL, REST API, GraphQL and other technologies</li>
+							<li className="pointer" onClick={ () => setShow(show => !show) }>Created an automated insurance quoting system with 5-10 insurance carriers issuing bindable quotes in less than 10 seconds, using PHP, JavaScript, MS SQL, REST API, GraphQL and other technologies</li>
+							{show ? <CardSample cardType={0} /> : null}
 							<li>Integrated the quoting system with Twilio to send and receive texts to and from customers and prospects via the Slack API interface, displaying queues in auto-updating Node.js dashboards</li>
 							<li>Mentored and led the development team and cooperated with sales, IT, and other departments to provide the best user experience, functionality, and customer service, allowing multiple business units to prosper</li>
 							<li>Disrupted the insurance agency business with these tools growing in a few short years from onset to 18,000+ customers, $20+ million in premium, and more than $7 billion dollars in insured value</li>

@@ -17,7 +17,9 @@ function NavBarJw() {
 						</a>
 					</Col>
 					<Col xs className="">
-						<h2>Jonathan Wogen</h2>
+						<Row>
+							<h2>Jonathan Wogen</h2>
+						</Row>	
 						<Row className="contact-row">
 							<div className="contact-col">
 								<a href="tel:+16125484942">
@@ -25,7 +27,7 @@ function NavBarJw() {
 									<MdLocalPhone className="phone-icon d-lg-none"/>
 								</a>
 								<a href="tel:+16125484942">
-									<span className="d-none d-lg-flex">548-4942</span>
+									<span className="d-none">548-4942</span>
 								</a>
 							</div>
 							<div className="contact-col">
@@ -34,7 +36,7 @@ function NavBarJw() {
 									<MdOutlineEmail className="mail-icon d-lg-none"/>
 								</a>
 								<a href="#home">
-									<span className="d-none d-lg-flex">jonwogen.com</span>
+									<span className="d-none">jonwogen.com</span>
 								</a>
 							</div>
 						</Row>

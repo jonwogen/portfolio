@@ -4,7 +4,8 @@ import Experience from './Components/Experience';
 import Education from './Components/Education';
 import { Container, Row, Col } from "react-bootstrap";
 import { Paper } from '@mui/material';
-import CardSample from './Components/Card';
+
+// import CardSample from './Components/Card';
 import Skills from "./Components/Skills";
 
 
@@ -16,20 +17,19 @@ function App() {
       </header>
       <section className="">
         <Row className="d-flex flex-row">
-        
-        <Col xxs sm={12} md={9}>
-          <Paper className="p-3 w-100 d-flex align-items-center" elevation={5}>
-            <Objective />
-          </Paper>
-          <Paper className="p-3 w-100 mt-2" elevation={5}>
-            <Education />
-          </Paper>
-        </Col>
-        <Col className="order-3 mt-xxs-2" xs sm={12} md={3}>
-          <Paper className="p-3 w-100 h-100" elevation={5}>
-            <Skills />
-          </Paper>
-        </Col>
+          <Col xxs={12} sm={12} md={9}>
+            <Paper className="p-3 w-100 d-flex align-items-center" elevation={5}>
+              <Objective />
+            </Paper>
+            <Paper className="p-3 w-100 mt-2" elevation={5}>
+              <Education />
+            </Paper>
+          </Col>
+          <Col className="order-3 mt-2 mt-md-0" xs sm={12} md={3}>
+            <Paper className="p-3 w-100 h-100" elevation={5}>
+              <Skills />
+            </Paper>
+          </Col>
         </Row>
       </section>
       <section className="">
@@ -50,7 +50,7 @@ function App() {
           </Row> */}
         {/* </Container> */}
       </section>
-      <CardSample />
+      {/* <CardSample /> */}
     </Container>
   );
 }

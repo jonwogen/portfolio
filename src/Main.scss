@@ -46,12 +46,14 @@ ul, p {
 ul {
     display: flex;
     flex-direction: column;
-    
-    ul {
-        margin-left: -1.5rem;
+    li {
+        margin-left: .6rem;
+        ul {
+            margin-left: -1.75rem;
 
-        li {
-            list-style-type: disc;
+            li {
+                list-style-type: disc;
+            }
         }
     }
 }
@@ -88,6 +90,7 @@ li {
         color: $mainFontColor;
         text-align: right;
         margin-bottom: .25rem;
+        padding-right: .25rem;
     }
     .contact-row {
         flex-direction: row;
@@ -153,4 +156,13 @@ hr {
 .mail-icon, .phone-icon {
     height: 3rem;
     width: 3rem;
+}
+.mail-icon {
+    margin-right: .25rem;
+}
+.phone-icon {
+    padding: .125rem;
+}
+.pointer {
+    cursor: pointer;
 }
